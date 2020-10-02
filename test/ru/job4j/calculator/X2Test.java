@@ -16,7 +16,7 @@ public class X2Test {
 
         int expected = 3;
 
-        int rsl = X2.calc(a,b,c,x);
+        int rsl = X2.calc(a, b, c, x);
 
         Assert.assertEquals(expected, rsl);
 
@@ -25,9 +25,9 @@ public class X2Test {
          c = 1;
          x = 1;
 
-         expected= 2;
+         expected = 2;
 
-         rsl = X2.calc(a,b,c,x);
+         rsl = X2.calc(a, b, c, x);
 
         Assert.assertEquals(expected, rsl);
 
@@ -36,9 +36,9 @@ public class X2Test {
         c = 0;
         x = 1;
 
-        expected= 2;
+        expected = 2;
 
-        rsl = X2.calc(a,b,c,x);
+        rsl = X2.calc(a, b, c, x);
 
         Assert.assertEquals(expected, rsl);
 
@@ -47,9 +47,9 @@ public class X2Test {
         c = 1;
         x = 0;
 
-        expected= 1;
+        expected = 1;
 
-        rsl = X2.calc(a,b,c,x);
+        rsl = X2.calc(a, b, c, x);
 
         Assert.assertEquals(expected, rsl);
 
