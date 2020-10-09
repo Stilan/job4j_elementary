@@ -14,7 +14,7 @@ public class FactorialTest {
     }
     @Test
     public void calc2() {
-        int rsl = Factorial.calc(4);
-        assertThat(rsl, is(24));
+        int rsl = Factorial.calc(0);
+        assertThat(rsl, is(1));
     }
 }
