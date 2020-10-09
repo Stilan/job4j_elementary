@@ -18,8 +18,9 @@ public class X2Test {
 
         int rsl = X2.calc(a, b, c, x);
 
-        Assert.assertEquals(expected,rsl);
+        Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void calc2() {
         int a = 0;
@@ -33,6 +34,7 @@ public class X2Test {
 
         Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void calc3() {
         int a = 1;
@@ -46,6 +48,7 @@ public class X2Test {
 
         Assert.assertEquals(expected, rsl);
     }
+
     @Test
     public void calc4() {
         int a = 1;

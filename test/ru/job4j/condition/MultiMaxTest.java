@@ -14,6 +14,7 @@ public class MultiMaxTest {
             assertThat(result, is(4));
 
     }
+
     @Test
     public void max2() {
 
@@ -21,6 +22,7 @@ public class MultiMaxTest {
         assertThat(result, is(4));
 
     }
+
     @Test
     public void max3() {
 

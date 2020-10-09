@@ -13,6 +13,7 @@ public class CounterTest {
         int expected = 30;
         assertThat(rsl, is(expected));
     }
+
     @Test
     public void sumByEven2() {
         int rsl = Counter.sumByEven(6, 10);

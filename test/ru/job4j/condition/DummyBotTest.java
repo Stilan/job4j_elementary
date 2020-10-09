@@ -12,6 +12,7 @@ public class DummyBotTest {
         assertThat(DummyBot.answer("Привет, Бот."), is("Привет, умник.")
         );
     }
+
     @Test
     public void answer2() {
         assertThat(DummyBot.answer("Пока."), is("До скорой встречи.")

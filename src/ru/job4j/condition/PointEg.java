@@ -8,6 +8,7 @@ public class PointEg {
         boolean eqY = y1 == y2;
         return  eqX && eqY;
     }
+
     public static void main(String[] args) {
 
         System.out.println(eq(1, 1, 2, 2));

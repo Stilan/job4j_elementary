@@ -20,6 +20,7 @@ public class PointTest {
 
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void distance2() {
         double expected = 12.16;
@@ -33,6 +34,7 @@ public class PointTest {
 
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void distance3() {
         double expected = 7.07;
@@ -46,6 +48,7 @@ public class PointTest {
 
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void distance4() {
         double expected = 20.24;
