@@ -5,7 +5,7 @@ public class Check {
         boolean result = data[0];
           for (int i = 0; i <= data.length-1; i++) {
                   if (data[i]!=result){
-                      result = data[i];
+                      result = false;
                       break;
                   }
           }
