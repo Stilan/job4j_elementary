@@ -5,7 +5,7 @@ public class MatrixSum {
         int rsl = 0;
         /* loops */
         for (int row = 0; row < array.length; row++) {
-            for (int cell = 0; cell < array[0].length; cell++) {
+            for (int cell = 0; cell < array[row].length; cell++) {
                 rsl += array[row][cell];
             }
         }
