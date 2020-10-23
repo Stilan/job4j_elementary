@@ -1,5 +1,7 @@
 package ru.job4j.array;
-
+/**
+* swap(...)
+*/
 public class SortSelected {
      public static int[]  sort(int[] data) {
         for (int i = 0; i < data.length; i++) {
@@ -8,7 +10,7 @@ public class SortSelected {
             int temp = data[i];
             data[i] = data[index];
             data[index] = temp;
-            /* swap(...) */
+
         }
         return data;
     }

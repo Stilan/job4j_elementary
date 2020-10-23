@@ -5,7 +5,6 @@ public class Point {
         double rsl = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         return rsl;
     }
-
     public static void main(String[] args) {
         double result = Point.distance(0, 0, 2, 0);
         double result2 = Point.distance(1, 3, -1, -9);
