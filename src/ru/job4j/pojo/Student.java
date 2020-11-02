@@ -3,16 +3,16 @@ package ru.job4j.pojo;
 import java.util.Date;
 
 public class Student {
-    private String FIO;
+    private String fio;
     private int group;
     private Date dateOfReceipt;
 
-    public String getFIO() {
-        return FIO;
+    public String getFio() {
+        return fio;
     }
 
-    public void setFIO(String FIO) {
-        FIO = FIO;
+    public void setFio(String fio) {
+        fio = fio;
     }
 
     public int getGroup() {
