@@ -11,6 +11,9 @@ public class FindEl {
           }
             index++;
         }
+        if (rsl == -1){
+            throw new ElementNotFoundException("Элемент не найден");
+        }
         return rsl;
     }
     public static void main(String[] args) {
