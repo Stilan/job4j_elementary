@@ -6,10 +6,9 @@ public class UserStore {
         for (User name : users) {
             if (login.equals(name.getUsername())){
                 user = name;
+            }else {
+                throw new UserNotFoundException();
             }
-        }
-        if (user == null){
-            throw new UserNotFoundException();
         }
         return user;
     }
