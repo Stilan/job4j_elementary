@@ -8,6 +8,7 @@ public class FindEl {
         for (String v : value) {
           if (key.equals(v)){
               rsl = index;
+              break;
           }
             index++;
         }
@@ -18,7 +19,7 @@ public class FindEl {
     }
     public static void main(String[] args) {
         String[] array = {"EEE","WWW","QQQ"};
-        String key = "QQQ";
+        String key = "WWW";
         try {
             System.out.println(indexOf(array,key));
         } catch (ElementNotFoundException e) {
