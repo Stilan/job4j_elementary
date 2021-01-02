@@ -7,11 +7,11 @@ import java.util.Map;
 
 public class BankService {
     private Map<User, List<Account>> users = new HashMap<>();
+
     public void addUser(User user) {
-        if (!users.containsKey(user.getPassport())) {
             users.putIfAbsent(user,new ArrayList<Account>());
-        }
     }
+
     public void addAccount(String passport, Account account) {
         User user = findByPassport(passport);
         if (user != null){
@@ -20,7 +20,9 @@ public class BankService {
                accounts.add(account);
            }
         }
+
     }
+
     public User findByPassport(String passport) {
         for (User user:users.keySet()) {
             if (user.getPassport().equals(passport)){
@@ -34,9 +36,12 @@ public class BankService {
         User user =  findByPassport(passport);
         if (user != null) {
             List<Account> accounts = users.get(user);
-              int index = accounts.indexOf(new Account(requisite,-1));
-              return  accounts.get(index);
+            for (Account account:accounts) {
+                if (account.getRequisite().equals(requisite)){
+                    return account;
+                }
             }
+        }
         return null;
     }
 
