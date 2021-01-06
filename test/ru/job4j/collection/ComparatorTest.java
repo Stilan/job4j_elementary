@@ -51,7 +51,7 @@ public class ComparatorTest {
         public void whenCompatorByNameAndPrority() {
             Comparator<Job> cmpNamePriority = new JobDescByName().thenComparing(new JobDescByPriority());
             int rsl = cmpNamePriority.compare(
-                    new Job("Impl task", 0),
+                    new Job("Fix bug", 0),
                     new Job("Fix bug", 1)
             );
             assertThat(rsl, lessThan(0));
@@ -60,10 +60,28 @@ public class ComparatorTest {
     public void whenCompatorByNameAscendingAndProrityAscending() {
         Comparator<Job> cmpNamePriority = new JobAscendingByName().thenComparing(new JobAscendingByPriority());
         int rsl = cmpNamePriority.compare(
-                new Job("Impl task", 0),
+                new Job("Fix bug", 1),
+                new Job("Fix bug", 0)
+        );
+        assertThat(rsl, greaterThan(0));
+    }
+     @Test
+    public void whenCompatorByNameAscendingAndProrityAscending2() {
+        Comparator<Job> cmpNamePriority = new JobAscendingByPriority().thenComparing(new JobAscendingByName());
+        int rsl = cmpNamePriority.compare(
+                new Job("Impl task", 1),
                 new Job("Fix bug", 1)
         );
         assertThat(rsl, greaterThan(0));
+    }
+    @Test
+    public void whenCompatorByNameAndPrority2() {
+        Comparator<Job> cmpNamePriority = new JobDescByPriority().thenComparing(new JobDescByName());
+        int rsl = cmpNamePriority.compare(
+                new Job("Impl task", 1),
+                new Job("Fix bug", 1)
+        );
+        assertThat(rsl, lessThan(0));
     }
 
 }
