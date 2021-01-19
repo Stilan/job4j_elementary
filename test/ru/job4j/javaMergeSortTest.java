@@ -19,10 +19,10 @@ public class javaMergeSortTest {
 
     @Test
     public void mergeTest() {
-        int[] a = new int[] {2,546,8,2,4,};
-        int[] b = new int[] {5,7,3,9};
+        int[] a = new int[] {2,2,4,8,546};
+        int[] b = new int[] {3,5,7,9};
         int[] result = merge(a, b);
-        int[] excepted = new int[]{2, 5, 7, 3, 9, 546, 8, 2, 4};
+        int[] excepted = new int[]{2, 2, 3, 4, 5, 7, 8, 9, 546};
         assertThat(result, is(excepted));
     }
 }
