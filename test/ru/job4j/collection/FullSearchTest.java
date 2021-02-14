@@ -14,12 +14,12 @@ public class FullSearchTest {
 
     @Test
     public void extractNumber() {
-        List<Task2> tasks = Arrays.asList(
+        List<Task2> tasks = List.of(
                 new Task2("1", "First desc"),
                 new Task2("2", "Second desc"),
                 new Task2("1", "First desc")
         );
-        Set<String> expected = new HashSet<>(Arrays.asList("1", "2"));
+        Set<String> expected = new HashSet<>(List.of("1", "2"));
         assertThat(FullSearch.extractNumber(tasks), is(expected));
     }
 }
