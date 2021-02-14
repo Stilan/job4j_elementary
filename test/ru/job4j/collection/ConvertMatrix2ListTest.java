@@ -17,7 +17,7 @@ public class ConvertMatrix2ListTest {
                 {1, 2},
                 {3, 4}
         };
-        List<Integer> expect = List.of(
+         var expect = List.of(
                 1, 2, 3, 4
         );
         List<Integer> result = list.toList(input);

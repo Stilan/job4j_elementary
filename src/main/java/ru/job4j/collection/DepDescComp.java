@@ -9,7 +9,7 @@ public class DepDescComp implements Comparator<String> {
 
         String  strings_o1 = o1.substring(0,2);
         String strings_o2 = o2.substring(0,2);
-        int res = strings_o2.compareTo(strings_o1);
+        var res = strings_o2.compareTo(strings_o1);
         if (res == 0){
            return res = o1.compareTo(o2);
         }

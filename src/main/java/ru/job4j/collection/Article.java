@@ -6,7 +6,7 @@ import java.util.Set;
 public class Article {
 
     public static boolean generateBy(String origin, String line) {
-        Set<String> text = new HashSet<>();
+        var text = new HashSet<>();
         origin = origin.replaceAll("[^A-Za-zА-Яа-я0-9]", " ");
         line = line.replaceAll("[^A-Za-zА-Яа-я0-9]", " ");
         String[] stringsText = origin.split(" ");
